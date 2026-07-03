@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+void restarDiez(int *enlace) {
+    *enlace = *enlace - 10; // Restamos 10 al valor apuntado
+}
+
+int main() {
+    int numero;
+
+    printf("Ingrese un numero entero: ");
+    scanf("%d", &numero);
+
+    printf("\nValor original: %d\n", numero);
+
+    restarDiez(&numero);
+
+    printf("Valor final despues de restar 10: %d\n", numero);
+
+    return 0;
+}
