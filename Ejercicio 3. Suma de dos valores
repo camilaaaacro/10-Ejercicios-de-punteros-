@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+void calcularSuma(int *n1, int *n2, int *res) {
+    *res = *n1 + *n2;
+}
+
+int main() {
+    int numero1, numero2, resultado;
+
+    printf("Ingrese el primer numero: ");
+    scanf("%d", &numero1);
+    printf("Ingrese el segundo numero: ");
+    scanf("%d", &numero2);
+
+    calcularSuma(&numero1, &numero2, &resultado);
+
+    printf("\nEl resultado de la suma es: %d\n", resultado);
+
+    return 0;
+}
