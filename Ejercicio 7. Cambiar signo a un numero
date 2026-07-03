@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+void cambiarSigno(int *enlace) {
+    *enlace = *enlace * -1;
+}
+
+int main() {
+    int numero;
+
+    printf("Ingrese un numero (positivo o negativo): ");
+    scanf("%d", &numero);
+
+    printf("\nValor original: %d\n", numero);
+
+    cambiarSigno(&numero);
+
+    printf("Valor con el signo cambiado: %d\n", numero);
+
+    return 0;
+}
