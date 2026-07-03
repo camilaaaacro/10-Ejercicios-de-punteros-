@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+void obtenerMayor(int *num1, int *num2, int *mayor) {
+    if (*num1 > *num2) {
+        *mayor = *num1;
+    } else {
+        *mayor = *num2;
+    }
+}
+
+int main() {
+    int numero1, numero2, elMayor;
+
+    printf("Ingrese el primer numero: ");
+    scanf("%d", &numero1);
+    printf("Ingrese el segundo numero: ");
+    scanf("%d", &numero2);
+
+    obtenerMayor(&numero1, &numero2, &elMayor);
+
+    printf("\nEl numero mayor es: %d\n", elMayor);
+
+    return 0;
+}
