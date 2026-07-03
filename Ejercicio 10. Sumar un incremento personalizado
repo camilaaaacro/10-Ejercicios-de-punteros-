@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+void incrementar(int *num, int cantidad) {
+    *num = *num + cantidad; 
+}
+
+int main() {
+    int numero, suma;
+
+    printf("Ingrese el numero inicial: ");
+    scanf("%d", &numero);
+    
+    printf("Ingrese cuanto le quiere sumar: ");
+    scanf("%d", &suma);
+    printf("\nValor original: %d\n", numero);
+    incrementar(&numero, suma);
+
+    printf("Valor final despues del incremento: %d\n", numero);
+
+    return 0;
+}
