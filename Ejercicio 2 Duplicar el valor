@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <iostream>
+
+void duplicar(int *enlace) {
+    *enlace = *enlace * 2; 
+}
+
+int main() {
+    int numero;
+
+    printf("Ingrese un numero entero: ");
+    scanf("%d", &numero);
+
+    printf("\nValor original: %d\n", numero);
+
+    // Pasamos la direccion de la variable
+    duplicar(&numero);
+
+    printf("Valor duplicado mediante puntero: %d\n", numero);
+
+    return 0;
+}
