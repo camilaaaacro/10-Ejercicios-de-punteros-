@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+void verificarPar(int *num, int *esPar) {
+    if (*num % 2 == 0) {
+        *esPar = 1; // Guardamos 1 si es par
+    } else {
+        *esPar = 0; // Guardamos 0 si es impar
+    }
+}
+
+int main() {
+    int numero, resultadopar;
+
+    printf("Ingrese un numero entero: ");
+    scanf("%d", &numero);
+
+    verificarPar(&numero, &resultadopar);
+
+    if (resultadopar == 1) {
+        printf("\nEl numero %d es PAR.\n", numero);
+    } else {
+        printf("\nEl numero %d es IMPAR.\n", numero);
+    }
+
+    return 0;
+}
