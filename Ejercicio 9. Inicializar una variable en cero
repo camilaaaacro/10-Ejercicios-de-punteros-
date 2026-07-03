@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+void calcularTriple(int *num, int *res) {
+    *res = *num * 3; 
+}
+
+int main() {
+    int numero, resultado;
+
+    printf("Ingrese un numero entero: ");
+    scanf("%d", &numero);
+
+    calcularTriple(&numero, &resultado);
+
+    printf("\nValor original: %d\n", numero);
+    printf("El triple del numero es: %d\n", resultado);
+
+    return 0;
+}
