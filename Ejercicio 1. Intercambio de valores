@@ -1,0 +1,25 @@
+#include <iostream>
+#include <stdio.h>
+
+void intercambiar(int *num1, int *num2) {
+    int aux;
+    aux = *num1;
+    *num1 = *num2;
+    *num2 = aux;
+}
+
+int main() {
+    int a, b;
+
+    printf("Ingrese el primer numero (A): ");
+    scanf("%d", &a);
+    printf("Ingrese el segundo numero (B): ");
+    scanf("%d", &b);
+
+    printf("\nValores originales: A = %d, B = %d\n", a, b);
+
+
+    printf("Valores cambiados: A = %d, B = %d\n", a, b);
+
+    return 0;
+}
